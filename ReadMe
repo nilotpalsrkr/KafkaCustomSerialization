@@ -1,0 +1,6 @@
+#docker-compose -f docker-compose-singlenode.yml up
+#docker-compose -f docker-compose-singlenode.yml ps
+#docker run --net=host --rm confluentinc/cp-kafka:5.3.1 kafka-topics --create --topic Topic-A --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:2181
+#docker run --net=host --rm confluentinc/cp-kafka:latest kafka-topics --create --topic Topic-A --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:2181
+#docker run --net=host --rm confluentinc/cp-kafka:latest kafka-topics --list --zookeeper  localhost:2181
+#docker run --net=host --rm confluentinc/cp-kafka:latest kafka-topics --zookeeper localhost:2181  --describe --topic Topic-A
